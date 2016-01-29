@@ -28,4 +28,8 @@ public class Numeros {
     public void ordenar(){
         Collections.sort(lista);
     }
+    public ArrayList<Integer> metodo(ArrayList<Integer>lista){//Como se recibe e devolve un ArrayList
+        return lista;
+        
+    }
 }
