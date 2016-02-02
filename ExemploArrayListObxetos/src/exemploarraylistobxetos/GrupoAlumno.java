@@ -2,6 +2,7 @@ package exemploarraylistobxetos;
 //Yasmin
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GrupoAlumno {
     ArrayList<Alumno>lista=new ArrayList<Alumno>();
@@ -36,5 +37,8 @@ public class GrupoAlumno {
     }
     public void borrarAlumno(){
         lista.remove(2);
+    }
+    public void ordenar(){
+        Collections.sort(lista);
     }
 }
