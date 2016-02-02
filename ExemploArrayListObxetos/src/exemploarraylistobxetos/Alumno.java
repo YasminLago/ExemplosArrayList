@@ -3,7 +3,7 @@ package exemploarraylistobxetos;
 
 import java.util.Objects;
 
-public class Alumno {
+public class Alumno implements Comparable{
     private String nome;
     private int nota;
    
@@ -47,5 +47,15 @@ public class Alumno {
         final Alumno other = (Alumno) obj;
         return true;
     }
-
+    @Override
+    public int compareTo(Object o){
+        Alumno obx=(Alumno)o;
+        if(this.nome.compareToIgnoreCase(obx.nome)==0)
+            return 0;
+        else if(this.nome.compareToIgnoreCase(obx.nome)>0)
+            return 1;
+        else 
+            return -1;
+    }
+    
 }
