@@ -6,7 +6,9 @@ public class ExemploArrayListObxetos {
         obxAlum.crearLista();
         obxAlum.verLista();
         obxAlum.verIgual();
-        obxAlum.borrarAlumno();
+        //obxAlum.borrarAlumno();
+        obxAlum.verLista();
+        obxAlum.ordenar();
         obxAlum.verLista();
     }
     
